@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    tools:layout_editor_absoluteY="89dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_above="@id/dialog_ok_btn_undone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Silahkan pilih jasa dahulu"
+                    android:textAlignment="center"
+                    android:textSize="60sp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:src="@drawable/smile_icon" />-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dialog_ok_btn_undone"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity=""
+                android:background="@color/colorPrimary"
+                android:padding="20dp"
+                android:text="OK"
+                android:textColor="@color/White"
+                android:textSize="50sp" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".view.ui.MemberRegistration"
+    android:padding="50dp">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="600dp"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pendaftaran Member"
+            android:gravity="center"
+            android:textSize="48sp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="36sp"
+            />
+
+        <EditText
+            android:id="@+id/name_member_regist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="36sp"
+            />
+
+        <EditText
+            android:id="@+id/email_member_regist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telpon"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="36sp"
+            />
+
+        <EditText
+            android:id="@+id/phone_member_regist"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/btn_member_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Daftar"
+            android:padding="20dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/White"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_width="900dp"
+        android:layout_height="600dp">
+
+        <TextView
+            android:id="@+id/choose_vehicle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan pilih jenis kendaraan anda"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/choose_vehicle_text"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:layout_below="@id/choose_vehicle_text"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/vehicle_shimmer_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:shimmer_demo_child_count="8"
+                app:shimmer_demo_grid_child_count="4"
+                app:shimmer_demo_layout="@layout/shimmer_vehicle_item"
+                app:shimmer_demo_layout_manager_type="grid"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/choose_vehicle_text"
+                android:id="@+id/rv_vehicle_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:padding="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

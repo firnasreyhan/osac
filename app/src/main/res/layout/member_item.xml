@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/alpabet_name"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="N"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="Name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/member_email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_span="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="Email"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/member_phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_span="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:text="Phone Number"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+</TableLayout>

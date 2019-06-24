@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.PaymentSuccessActivity">
+
+    <TextView
+        android:id="@+id/text_ps_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Pembayaran dengan Tunai berhasil dilakukan"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_ps_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Uang Kembali"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/text_ps_1" />
+
+    <TextView
+        android:id="@+id/text_amount_ps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Rp 0"
+        android:layout_marginTop="5dp"
+        android:textSize="48sp"
+        app:layout_constraintTop_toBottomOf="@id/text_ps_2" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_ps_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="Ingin Cetak Struk?"-->
+        <!--android:textSize="24sp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/text_amount_ps"/>-->
+
+    <LinearLayout
+        android:id="@+id/button_payment_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginRight="350dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_amount_ps">
+
+        <Button
+            android:id="@+id/btn_cetak"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:padding="25dp"
+            android:text="Cetak Struk"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_selesai"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="25dp"
+            android:text="Selesai"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
